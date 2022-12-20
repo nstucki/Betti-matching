@@ -1,0 +1,22 @@
+MODEL:
+  CHANNELS: [16, 32, 64, 128, 256]
+  NUM_RES_UNITS: 2
+  STRIDES: [2, 2, 2, 2]
+
+LOSS:
+  USE_LOSS: 'DiceBettiMatching'      # Avilable options 'Dice', 'BettiMatching', 'DiceBettiMatching', 'HuTopo', 'ClDice', 'ComposedHuTopo'
+  ALPHA: 0.5
+  DIMENSIONS: [0,1]
+  FILTRATION: 'superlevel'          # Avilable options 'superlevel','sublevel','bothlevel'
+  RELATIVE: True
+
+TRAIN:
+  NUM_WORKERS: 16                   # Number of data loading threads
+  SEED: 10                          # random seed for reproducibility
+  MAX_EPOCHS: 1000
+  LR: 0.001
+  BATCH_SIZE: 2                     # Batch size for a single GPU
+  SAVE_PATH: "./models/"            # save path for the checkpoint
+  LOG_PATH: "./runs/"               # save path for the tensorboard log
+  VAL_INTERVAL: 1                   # validation interval
+  LOG_INTERVAL: 10                  # tensorboard log interval

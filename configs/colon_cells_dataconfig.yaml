@@ -1,0 +1,11 @@
+DATA:
+  DIM: 2                                                     # data dimension
+  DATA_PATH: './data/colon_cancer_cells/'                    # Path to dataset
+  FORMAT: '.png'
+  DATASET: 'colon'                                           # Dataset name
+  IMG_SIZE: [48, 48]                                         # Input image size
+  TRAIN_SAMPLES: 20
+  VAL_SAMPLES: 4
+  NUM_PATCH: 12                                              # no of patch from each volume
+  IN_CHANNELS: 1
+  OUT_CHANNELS: 1

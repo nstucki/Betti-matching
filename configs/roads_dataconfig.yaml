@@ -1,0 +1,11 @@
+DATA:
+  DIM: 2                                                        # data dimension
+  DATA_PATH: './data/roads/'                                    # Path to dataset
+  FORMAT: '.png'
+  DATASET: 'roads'                                              # Dataset name
+  IMG_SIZE: [48, 48]                                            # Input image size
+  TRAIN_SAMPLES: 100
+  VAL_SAMPLES: 24
+  NUM_PATCH: 8                                                  # no of patch from each volume
+  IN_CHANNELS: 3
+  OUT_CHANNELS: 1
