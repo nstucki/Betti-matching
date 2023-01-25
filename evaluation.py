@@ -133,7 +133,7 @@ def plot_evaluation(image, models=[], segment=None, data_path='./data/cremi'):
     metrics = pd.DataFrame(columns=['Acc', 'Dice', 'BNerr', 'BMerr', 'BNerr 0', 'BMerr 0', 'BNerr 1', 'BMerr 1'])
     for i,output_bin in enumerate(outputs_bin):
         BM = BettiMatching(output_bin, seg, filtration='superlevel')
-        metrics.loc['Model '+str(i)] = {'Acc': Accuracy(output_bin, seg), 'Dice': Dice(output_bin, seg), 'Betti': BM.Betti_number_error(), 'Betti 0': BM.Betti_number_error(dimensions=[0]), 'Betti 1': BM.Betti_number_error(dimensions=[1]), 'TM': BM.loss(), 'TM 0': BM.loss(dimensions=[0]), 'TM 1': BM.loss(dimensions=[1])}
+        metrics.loc['Model '+str(i)] = {'Acc': Accuracy(output_bin, seg), 'Dice': Dice(output_bin, seg), 'Betti': BM.Betti_number_error(), 'Betti 0': BM.Betti_number_error(dimensions=[0]), 'Betti 1': BM.Betti_number_error(dimensions=[1]), 'BM': BM.loss(), 'BM 0': BM.loss(dimensions=[0]), 'BM 1': BM.loss(dimensions=[1])}
     print(metrics)
     return
 
