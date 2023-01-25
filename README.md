@@ -3,11 +3,11 @@
 
 **What is Betti matching?** The topology of images is best captured by persistent homology, which can be represented in form of persistence barcodes. An interval in the barcode represents a topological feature, e.g. a connected component in dimension 0 or a loop in dimension 1. 
 
-![TopoMatch](.github/Betti-matching.png "TopoMatch")
+![Betti_matching](.github/Betti-matching.png "Betti matching")
 
 Betti matching is a framework, based on the theory of induced matchings (see https://arxiv.org/abs/1311.3681), that matches intervals representing topological features, which sptially correspond to each other. It defines the Betti matching loss, which enforces topologically accurate image segmentations during training. The Betti matching error additionally serves as a metric for the evaluation of segmentation tasks. It can be seen as a refinement of the well-established Betti number error by counting the features in both images that do not spatially correspond to a feature in the other image.
 
-![TopoMatch_performance](.github/Betti-matching-error.png "TopoMatch performance")
+![Betti_matching_performance](.github/Betti-matching-error.png "Betti matching performance")
 
 **About the code**. We have provided the source code of Betti matching along with instructions for the training and evaluation scripts. Furthermore we have provided an extended implementation of the Wasserstein matching (see https://github.com/HuXiaoling/TopoLoss), which additionally matches intervals in dimension 0. The introduction.ipynb notebook introduces the implemented functions and visualizes the improvements of the Betti matching over the traditional Wasserstein Matching. 
 
@@ -40,7 +40,7 @@ The train.py and evaluation.py files can be used to reproduce our experiments. W
 
 8.) Activate BettiMatching as kernel in Jupyter Notebook
 
-### Usage of TopoMatch:
+### Usage of Betti matching:
 For a detailed explanation and introduction to Betti matching we refer to the Jupyter Notebook introduction.ipynb, which introduces the most important functions of the BettiMatching class and the CubicalPersistence class.
 
 ### Training
@@ -70,7 +70,7 @@ python3 evaluate.py --folder ./models/cremi --config configs/cremi_config.yaml -
 python3 evaluate.py --folder ./models/cremi --config configs/cremi_config.yaml --dataconfig configs/cremi_dataconfig.yaml --cuda_visible_device 2
 
 
-<!-- ## Citing TopoMatch
+<!-- ## Citing Betti matching
 If you find our repository useful in your research, please cite the following:
 ```bibtex
 @article{
