@@ -57,7 +57,7 @@ class BettiMatchingLoss(_Loss):
         dic = {}
         dic['dice'] = DiceLoss(sigmoid=True)(input,target)
         dic['Betti matching'] = torch.mean(torch.stack(losses))
-        loss = dic['topo']
+        loss = dic['Betti matching']
         return loss, dic
 
 
