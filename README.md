@@ -81,7 +81,6 @@ If you find our repository useful in your research, please cite the following:
 -->
 
 # Acknowledgement
-
 We acknowledge the following repositories from where we have inherited code snippets or copied implementation details:
 
 1. ClDice: [[code](https://github.com/jocpae/clDice)][[paper](https://arxiv.org/abs/2003.07311)]
