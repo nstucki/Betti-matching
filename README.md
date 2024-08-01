@@ -73,7 +73,14 @@ python3 evaluate.py --folder ./models/cremi --config configs/cremi_config.yaml -
 <!-- ## Citing Betti matching
 If you find our repository useful in your research, please cite the following:
 ```bibtex
-@article{
+@misc{stucki2022topologicallyfaithfulimagesegmentation,
+      title={Topologically faithful image segmentation via induced matching of persistence barcodes}, 
+      author={Nico Stucki and Johannes C. Paetzold and Suprosanna Shit and Bjoern Menze and Ulrich Bauer},
+      year={2022},
+      eprint={2211.15272},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2211.15272}, 
 }
 ``` -->
 
