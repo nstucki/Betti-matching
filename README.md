@@ -1,6 +1,8 @@
 **Betti matching**: Topological loss and metric for 2D image segmentation
 ========
 
+[![DOI](https://img.shields.io/badge/arXiv-https%3A%2F%2Fdoi.org%2F10.48550%2FarXiv.2203.10202-B31B1B)](https://arxiv.org/abs/2211.15272)
+
 **What is Betti matching?** The topology of images is best captured by persistent homology, which can be represented in form of persistence barcodes. An interval in the barcode represents a topological feature, e.g. a connected component in dimension 0 or a loop in dimension 1. 
 
 ![Betti_matching](.github/Betti-matching.png "Betti matching")
