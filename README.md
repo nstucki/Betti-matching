@@ -70,7 +70,7 @@ python3 evaluate.py --folder ./models/cremi --config configs/cremi_config.yaml -
 python3 evaluate.py --folder ./models/cremi --config configs/cremi_config.yaml --dataconfig configs/cremi_dataconfig.yaml --cuda_visible_device 2
 
 
-<!-- ## Citing Betti matching
+## Citing Betti matching
 If you find our repository useful in your research, please cite the following:
 ```bibtex
 @misc{stucki2022topologicallyfaithfulimagesegmentation,
@@ -82,7 +82,7 @@ If you find our repository useful in your research, please cite the following:
       primaryClass={cs.CV},
       url={https://arxiv.org/abs/2211.15272}, 
 }
-``` -->
+```
 
 <!-- # License
 -->
