@@ -3,6 +3,8 @@
 
 [![DOI](https://img.shields.io/badge/arXiv-https%3A%2F%2Fdoi.org%2F10.48550%2FarXiv.2203.10202-B31B1B)](https://arxiv.org/abs/2211.15272) [![License](https://img.shields.io/badge/license-MIT-blue)](https://opensource.org/license/mit)
 
+Note that an efficient C++ implementation of Betti matching together with python bindings can be found [here](https://github.com/nstucki/Betti-Matching-3D).
+
 **What is Betti matching?** The topology of images is best captured by persistent homology, which can be represented in form of persistence barcodes. An interval in the barcode represents a topological feature, e.g. a connected component in dimension 0 or a loop in dimension 1. 
 
 ![Betti_matching](.github/Betti-matching.png "Betti matching")
